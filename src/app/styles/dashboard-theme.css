@@ -1,0 +1,48 @@
+/* Variables CSS globales pour le dashboard */
+:root {
+  /* Thème clair */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.15);
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+/* Thème sombre pour le dashboard uniquement */
+body.dark-theme {
+  --bg-primary: #1f2937;
+  --bg-secondary: #374151;
+  --bg-tertiary: #4b5563;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --border-color: #4b5563;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow-hover: rgba(0, 0, 0, 0.4);
+  --accent-primary: #818cf8;
+  --accent-secondary: #a78bfa;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
+}
+
+/* Styles globaux pour le dashboard en mode sombre */
+body.dark-theme {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Transitions globales pour tous les éléments du dashboard */
+body.dark-theme *,
+body.light-theme * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
